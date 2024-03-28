@@ -3075,7 +3075,11 @@ main.bg {
   background: #ffffff;
   border-radius: 90px 0 0 90px;
   padding: 70px 47px 70px 70px;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.menu__info::-webkit-scrollbar {
+  width: 0;
 }
 
 .menu__info--top {
