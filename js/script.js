@@ -21,4 +21,14 @@ $(document).ready(function(){
             }
         }
     });
+
+    $(".icon-menu").click(function() {
+        $(".menu").addClass('show');
+        $("body").addClass('no-scroll');
+    });
+
+    $(".menu__info--close").click(function() {
+        $(".menu").removeClass('show');
+        $("body").removeClass('no-scroll');
+    });
 });
