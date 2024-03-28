@@ -31,4 +31,9 @@ $(document).ready(function(){
         $(".menu").removeClass('show');
         $("body").removeClass('no-scroll');
     });
+
+    $(".menu-overlay").click(function() {
+        $(".menu").removeClass('show');
+        $("body").removeClass('no-scroll');
+    });
 });
