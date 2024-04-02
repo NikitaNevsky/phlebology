@@ -1189,6 +1189,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin-left: 15px;
 }
 
+.positive__slider--mob {
+  display: none;
+}
+
 .positive__slider--item {
   width: 100%;
   max-width: 1120px;
@@ -2035,12 +2039,13 @@ main.bg {
   height: auto;
 }
 
-.doctors__item--actions .doctors__item--btn:hover img {
-  filter: invert(1);
+.doctors__item--actions .doctors__item--btn svg {
+  margin-right: 5px;
+  transition: all 0.3s ease;
 }
 
-.doctors__item--actions .doctors__item--btn img {
-  margin-right: 5px;
+.doctors__item--actions .doctors__item--btn:hover svg path {
+  stroke: #ffffff;
 }
 
 .doctors__item--actions .doctors__item--button {
@@ -3160,6 +3165,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
+
 @media (max-width: 992px) {
   [class*=__container] {
     padding: 0 20px;
@@ -3208,10 +3214,10 @@ body.no-scroll {
   }
 
   .offer__left {
-    padding: 40px 40px 140px 40px;
+    padding: 36px;
     border-radius: 60px;
     max-width: 100%;
-    height: auto;
+    height: 437px;
     background-size: 100% 100%;
     margin-bottom: 15px;
   }
@@ -3237,18 +3243,24 @@ body.no-scroll {
     font-size: 12px;
   }
 
+  .offer__button.btn {
+    width: 198px;
+  }
+
   .offer__right--block1 {
     padding: 40px;
     border-radius: 60px;
     width: 100%;
     height: 433px;
     max-height: 433px;
-    background-size: 70% 65%;
+    background: url('../img/images/image-block-1-mobile.png') no-repeat right bottom;
+    background-size: 90% 65%;
+    background-color: #F1F4FA;
   }
 
   .block1__title {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 130%;
     max-width: 168px;
     margin-bottom: 20px;
   }
@@ -3504,7 +3516,7 @@ body.no-scroll {
     margin-bottom: 30px;
   }
 
-  .life__warning--button {
+  .life__warning--button.btn {
     width: 210px;
   }
 
@@ -3545,10 +3557,12 @@ body.no-scroll {
 
   .step {
     padding: 16px 18px;
+    width: 100%;
   }
 
   .step__left {
     width: 36px;
+    min-width: 36px;
     height: 36px;
   }
 
@@ -4174,7 +4188,7 @@ body.no-scroll {
     margin-left: 5px;
   }
 
-  .doctors.doc .doctors__item--actions .doctors__item--btn img {
+  .doctors.doc .doctors__item--actions .doctors__item--btn svg {
     display: none;
   }
 
@@ -4848,5 +4862,397 @@ body.no-scroll {
   .menu__contacts .header__phone {
     display: block;
   }
+
+  .btn {
+    width: 100%;
+  }
+
+  .life__item:nth-child(3) .life__item--title span {
+    padding-bottom: 5px;
+  }
+
+  .life2__right .life__item:nth-child(1) .life__item--title span {
+    padding-bottom: 5px;
+  }
+
+  .life2__right .life__item:nth-child(2) .life__item--title span {
+    padding-bottom: 5px;
+  }
+
+  .life2__right .life__item:nth-child(3) .life__item--title span {
+    padding-bottom: 0px;
+  }
+
+  .plan__steps--item ul {
+    padding-left: 48px;
+  }
+
+  .positive__slider .owl-dots {
+    display: none;
+  }
+
+  .positive__slider .owl-nav {
+    bottom: -40px;
+  }
+
+  .positive__slider--mob {
+    display: block;
+  }
+
+  .positive__slider--mob .positive__slider--item {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .positive__slider--mob .positive__slider--item img {
+    border-radius: 30px;
+    overflow: hidden;
+  }
   
+  .positive__slider--desk {
+    display: none;
+  }
+
+  .main-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer {
+    order: 0;
+  }
+
+  .life {
+    order: 1;
+  }
+
+  .life2 {
+    order: 2;
+  }
+
+  .plan {
+    order: 3;
+  }
+
+  .request {
+    order: 4;
+  }
+
+  .positive {
+    order: 5;
+  }
+
+  .six-steps {
+    order: 6;
+  }
+
+  .warning {
+    order: 7;
+  }
+
+  .doctors {
+    order: 8;
+  }
+
+  .clinics {
+    order: 9;
+  }
+
+  .doctor-card__left {
+    max-width: 100%;
+  }
+  
+}
+
+@media (max-width: 340px) {
+  .appointment__input {
+    width: 100%;
+  }
+
+  .appointment__button button {
+    width: 100%;
+  }
+
+  .appointment__button {
+    width: 100%;
+  }
+
+  .header__logo img {
+    height: 20px;
+  }
+
+  .offer__title {
+    font-size: 24px;
+  }
+
+  .offer__subtitle {
+    font-size: 12px;
+  }
+
+  .offer__left {
+    padding: 34px;
+    height: 420px;
+  }
+
+  .block1__title {
+    margin-bottom: 15px;
+  }
+
+  .block1__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .offer__right--block1 {
+    height: 400px;
+    background-size: 90% 75%;
+  }
+
+  .life__item--left {
+    margin-right: -20px;
+  }
+
+  .life__item--text {
+    max-width: 200px;
+  }
+
+  .life2__left--age {
+    top: 290px;
+    left: 20px;
+  }
+
+  .age__text {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 100px;
+  }
+
+  .life__warning {
+    padding: 34px;
+  }
+
+  .life__warning--title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .life__warning--text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .life__warning--button.btn {
+    width: 180px;
+  }
+
+  .plan__steps--item {
+    padding: 20px;
+  }
+
+  .step__right {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .request__info {
+    padding: 32px;
+  }
+
+  .request__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .request__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .request__list {
+    row-gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .request__item--top span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .request__item--text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .request__button .btn {
+    font-size: 11px;
+  }
+
+  .request__info {
+    height: 620px;
+  }
+
+  .six-steps__item {
+    padding: 30px;
+    height: 310px;
+  }
+
+  .six-steps__item--title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .six-steps__item--text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .six-steps__item:nth-child(1) {
+    background-size: 135px 110px;
+  }
+
+  .six-steps__item:nth-child(1):before {
+    font-size: 170px;
+  }
+
+  .six-steps__item:nth-child(2) {
+    background-size: 135px 100px;
+    height: 350px;
+  }
+
+  .six-steps__item:nth-child(2):before {
+    font-size: 150px;
+    left: -24px;
+  }
+
+  .six-steps__item:nth-child(3) {
+    background-size: 135px 100px;
+    height: 350px;
+  }
+
+  .six-steps__item:nth-child(3):before {
+    font-size: 170px;
+    left: -24px;
+  }
+
+  .six-steps__item:nth-child(4) {
+    background-size: 135px 100px;
+    height: 320px;
+  }
+
+  .six-steps__item:nth-child(4):before {
+    font-size: 170px;
+    left: -24px;
+  }
+
+  .six-steps__item:nth-child(5) {
+    background-size: 135px 110px;
+    height: 320px;
+  }
+
+  .six-steps__item:nth-child(5):before {
+    font-size: 170px;
+    left: -24px;
+  }
+
+  .six-steps__item:nth-child(6) {
+    height: 370px;
+  }
+
+  .six-steps__item:nth-child(6):before {
+    font-size: 170px;
+    left: -24px;
+  }
+
+  .warning__info {
+    padding: 30px;
+    height: 570px;
+  }
+
+  .warning__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .warning__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+
+  .footer__about {
+    row-gap: 15px;
+    column-gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .header__time>span,
+  .header__phone>span,
+  .header__point>span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .header__time--text,
+  .header__phone--text {
+    font-size: 12px;
+  }
+
+  .dropdown span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .footer__links a {
+    font-size: 12px;
+  }
+
+  .doctors.doc .doctors__item--name {
+    font-size: 13px;
+  }
+
+  .doctors.doc .doctors__item--experience {
+    font-size: 12px;
+  }
+
+  .doctors.doc .doctors__item--actions .doctors__item--btn {
+    font-size: 11px;
+    padding: 15px 20px;
+  }
+
+  .doctors.doc .doctors__item--more a {
+    font-size: 11px;
+  }
+
+  .doctors.doc .doctors__item--speciality {
+    margin-bottom: 15px;
+  }
+
+  .doctors.doc .doctors__item--actions {
+    padding-top: 15px;
+  }
+
+  .doctor-card__info--experience {
+    height: 80px;
+    max-width: 188px;
+    font-size: 12px;
+  }
+
+  .doctor-card__info--experience span {
+    font-size: 28px;
+  }
+
+  .doctor-card__left .appointment__input input {
+    width: 100%;
+  }
+
+  .doctors.doc .doctors__item--actions .doctors__item--btn img {
+    display: none;
+  }
+
 }
